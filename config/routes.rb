@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
+  root to: 'questions#index'
+  resources :questions, only: [:index]
 end
